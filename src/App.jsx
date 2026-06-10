@@ -361,7 +361,7 @@ useEffect(() => {
       </section>
 
       {/* Video + About + Expect */}
-      <section className="max-w-7xl mx-auto px-6 pb-24" id="party">
+      <section className="max-w-7xl mx-auto px-6 pb-17" id="party">
 
         <div className="grid lg:grid-cols-3 gap-8">
 
@@ -503,7 +503,7 @@ useEffect(() => {
       </section>
 
       {/* Venue Section */}
-      <section id="venue" className="max-w-7xl mx-auto px-6 pb-24">
+      <section id="venue" className="max-w-7xl mx-auto px-6 pb-17">
 
         <div className="bg-white/80 backdrop-blur-md rounded-[40px] p-8 shadow-xl border border-white">
 
