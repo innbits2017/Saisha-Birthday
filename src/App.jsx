@@ -1,6 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,  useRef } from "react";
 
 export default function App() {
+
+
+const videoRef = useRef(null);
+const [videoplaying, videosetPlaying] = useState(false);
+
 
 const targetDate = new Date("2026-06-12T17:00:00");
 
@@ -55,11 +60,12 @@ useEffect(() => {
   };
 }, []);
 
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#FFF9FB] via-[#FDF7FF] to-[#F6EEFF] overflow-hidden">
 
       <audio id="birthdayMusic" loop>
-        <source src="/birthday-music.mp3" type="audio/mpeg" />
+        <source src="hbd-music.mp3" type="audio/mpeg" />
       </audio>
 
       {/* Navbar */}
@@ -145,7 +151,7 @@ useEffect(() => {
             </span>
 
             <h1 className="hero-script text-[120px] md:text-[145px] leading-[0.7] text-[#A975FF] mt-10">
-              Saisha's
+              Saisha is
             </h1>
 
             <h2 className="text-[50px] md:text-[50px] font-semibold text-[#F78BB7] leading-none">
@@ -357,31 +363,44 @@ useEffect(() => {
           {/* Video Card */}
           <div className="bg-white/80 backdrop-blur-md rounded-[32px] p-6 shadow-xl border border-white">
                <h3 className="text-[#9B73F8] text-30px font-[600] mb-5">
-                    💜 PARTY LOCATION
+                    💜 VIDEO INVITATION
                   </h3>
+          
+          <div className="relative overflow-hidden rounded-3xl shadow-xl">
+
+  <video
+    ref={videoRef}
+    className="w-full h-[320px] object-cover"
+    poster="/video-thumbnail.jpg"
+    controls={videoplaying}
+  >
+    <source
+      src="/Invitation-video.mp4"
+      type="video/mp4"
+    />
+  </video>
+
+  {!videoplaying && (
+    <button
+      onClick={() => {
+        videoRef.current?.play();
+        videosetPlaying(true);
+      }}
+      className="absolute inset-0 flex items-center justify-center"
+    >
+      <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-110 transition">
+
+        <span className="text-3xl text-pink-500">
+          ▶
+        </span>
+
+      </div>
+    </button>
+  )}
+
+</div>
 
 
-            <div className="relative overflow-hidden rounded-3xl">
-
-              <img
-                src="/video-thumbnail.jpg"
-                alt="Invitation Video"
-                className="w-full h-[320px] object-cover"
-              />
-
-              <button className="absolute inset-0 flex items-center justify-center">
-
-                <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-110 transition">
-
-                  <span className="text-3xl text-pink-500">
-                    ▶
-                  </span>
-
-                </div>
-
-              </button>
-
-            </div>
 
           </div>
 
@@ -398,7 +417,7 @@ useEffect(() => {
               <div className="flex gap-4">
                 <div className="text-3xl">🎮</div>
                 <div>
-                  <h4 className="font-semibold">Fun Games</h4>
+                  <h4>Fun Games</h4>
                   <p className="text-sm text-gray-500">
                     Exciting games and challenges
                   </p>
@@ -408,7 +427,7 @@ useEffect(() => {
               <div className="flex gap-4">
                 <div className="text-3xl">🎵</div>
                 <div>
-                  <h4 className="font-semibold">Music & Dance</h4>
+                  <h4>Music & Dance</h4>
                   <p className="text-sm text-gray-500">
                     Dance, groove and celebrate
                   </p>
@@ -418,7 +437,7 @@ useEffect(() => {
               <div className="flex gap-4">
                 <div className="text-3xl">🧁</div>
                 <div>
-                  <h4 className="font-semibold">Sweet Treats</h4>
+                  <h4>Sweet Treats</h4>
                   <p className="text-sm text-gray-500">
                     Cake, snacks and desserts
                   </p>
@@ -428,7 +447,7 @@ useEffect(() => {
               <div className="flex gap-4">
                 <div className="text-3xl">🎁</div>
                 <div>
-                  <h4 className="font-semibold">Surprises</h4>
+                  <h4>Surprises</h4>
                   <p className="text-sm text-gray-500">
                     Lots of fun surprises
                   </p>
