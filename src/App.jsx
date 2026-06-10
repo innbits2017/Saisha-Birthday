@@ -371,7 +371,7 @@ useEffect(() => {
   <video
     ref={videoRef}
     className="w-full h-[320px] object-cover"
-    poster="/video-thumbnail.jpg"
+    poster="/video-thumbnail.webp"
     controls={videoplaying}
   >
     <source
