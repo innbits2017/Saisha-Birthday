@@ -113,16 +113,21 @@ useEffect(() => {
 
             <div className="hidden md:flex gap-8 text-[#4A4760]">
               <a href="#">Home</a>
-              <a href="#">Party</a>
-              <a href="#">Venue</a>
-              <a href="#">RSVP</a>
+              <a href="#party">Party</a>
+              <a href="#venue">Venue</a>
+              <a href="#rsvp">RSVP</a>
             </div>
 
             <button
               onClick={() => {
                 const audio = document.getElementById("birthdayMusic");
 
+                if (audio) {
+                  audio.volume = 0.1; // 20% volume
+                }
+
                 if (!playing) {
+                  audio.volume = 0.1;
                   audio.play();
                 } else {
                   audio.pause();
@@ -147,7 +152,7 @@ useEffect(() => {
           <div>
 
             <span className="bg-[#F4E9FF] text-[#9B73F8] px-5 py-2 rounded-full">
-              💜 YOU'RE INVITED TO
+              💜 YOU'RE INVITED
             </span>
 
             <h1 className="hero-script text-[120px] md:text-[145px] leading-[0.7] text-[#A975FF] mt-10">
@@ -356,7 +361,7 @@ useEffect(() => {
       </section>
 
       {/* Video + About + Expect */}
-      <section className="max-w-7xl mx-auto px-6 pb-24">
+      <section className="max-w-7xl mx-auto px-6 pb-24" id="party">
 
         <div className="grid lg:grid-cols-3 gap-8">
 
@@ -569,7 +574,7 @@ useEffect(() => {
 
       {/* RSVP Section */}
 
-      <section className="max-w-7xl mx-auto px-6 pb-24 items-center">
+      <section className="max-w-7xl mx-auto px-6 pb-24 items-center" id="rsvp">
 
           <div className="bg-gradient-to-r from-[#F8F0FF] via-[#FFF8FB] to-[#FDF4FF] rounded-[40px] p-12 text-center shadow-xl">
 
