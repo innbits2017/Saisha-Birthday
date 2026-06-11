@@ -86,7 +86,8 @@ useEffect(() => {
               <h2
                 className="
                 hero-script
-                text-[42px]
+                text-[32px]
+                md:text-[42px] 
                 leading-[0.8]
                 text-[#8D67E8]
                 "
@@ -98,7 +99,8 @@ useEffect(() => {
                 className="
                 uppercase
                 tracking-[5px]
-                text-[14px]
+                text-[12px]
+                md:text-[14px]
                 font-bold
                 text-[#7C4DFF]
                 -mt-1
