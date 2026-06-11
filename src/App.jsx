@@ -568,7 +568,7 @@ useEffect(() => {
 
         </div>
           <div className="absolute top-32 right-20 w-3 h-8 bg-pink-300 rounded-full rotate-45"></div>
-          <div className="absolute top-62 right-40 w-3 h-8 bg-purple-300 rounded-full -rotate-45"></div>
+          <div className="absolute top-72 right-40 w-3 h-8 bg-purple-300 rounded-full -rotate-45"></div>
           <div className="absolute bottom-24 right-24 w-3 h-8 bg-blue-300 rounded-full rotate-12"></div>
       </section>
 
