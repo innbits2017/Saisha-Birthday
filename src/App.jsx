@@ -576,7 +576,7 @@ useEffect(() => {
 
       <section className="max-w-7xl mx-auto px-6 pb-24 items-center" id="rsvp">
 
-          <div className="bg-gradient-to-r from-[#F8F0FF] via-[#FFF8FB] to-[#FDF4FF] rounded-[40px] p-12 text-center shadow-xl">
+          <div className="bg-gradient-to-r from-[#F8F0FF] via-[#FFF8FB] to-[#FDF4FF] rounded-[40px] p-6 text-center shadow-xl">
 
             <div className="text-6xl mb-4">
               🎂
