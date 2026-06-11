@@ -287,7 +287,7 @@ useEffect(() => {
                     <img src="/left-bday.webp"></img>
                   </div>
 
-                  <h2 className="text-[28px] font-bold tracking-wide text-[#A975FF]">
+                  <h2 className="text-[20px] md:text-[28px] font-bold tracking-wide text-[#A975FF]">
                     THE PARTY STARTS IN
                   </h2>
 
