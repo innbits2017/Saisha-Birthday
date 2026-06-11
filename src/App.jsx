@@ -155,11 +155,11 @@ useEffect(() => {
               💜 YOU'RE INVITED
             </span>
 
-            <h1 className="hero-script text-[120px] md:text-[145px] leading-[0.7] text-[#A975FF] mt-10">
+            <h1 className="hero-script text-[80px] md:text-[145px] leading-[0.7] text-[#A975FF] mt-10">
               Saisha is
             </h1>
 
-            <h2 className="text-[50px] md:text-[50px] font-semibold text-[#F78BB7] leading-none">
+            <h2 className="text-[30px] md:text-[50px] font-semibold text-[#F78BB7] leading-none">
               Officially turning 13! 🎉
             </h2>
 
