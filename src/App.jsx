@@ -200,7 +200,7 @@ useEffect(() => {
 
                       <div>
                         <div className="font-semibold text-[#4A4760]">
-                          5 PM
+                          6 PM
                         </div>
                         <div className="text-sm text-gray-500">
                           Onwards
