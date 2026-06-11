@@ -7,7 +7,7 @@ const videoRef = useRef(null);
 const [videoplaying, videosetPlaying] = useState(false);
 
 
-const targetDate = new Date("2026-06-12T17:00:00");
+const targetDate = new Date("2026-06-12T18:00:00");
 
 const calculateTimeLeft = () => {
   const now = new Date();
